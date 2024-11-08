@@ -3,5 +3,7 @@ services:
     build:
       context: .
     restart: unless-stopped
+    volumes:
+      - ./mount:/configs/mount
     ports:
       - 3000:3000
